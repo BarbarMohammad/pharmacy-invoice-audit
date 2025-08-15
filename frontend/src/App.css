@@ -1,0 +1,155 @@
+.section-card {
+  margin: 16px 0;
+  padding: 24px 20px;
+  border-radius: 14px;
+  background: #fcfcfc;
+  box-shadow: 0 4px 16px 0 rgba(80, 92, 123, 0.08);
+}
+.section-card.price { background: #fff2f0; }
+.section-card.formulation { background: #f8ffee; }
+.section-card.strength { background: #fffbee; }
+.section-card.payer { background: #eef7ff; }
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 1.18em;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 100px;
+  font-size: 0.98em;
+  font-weight: 500;
+  color: #fff;
+  margin-right: 6px;
+}
+.badge.price { background: #eb5757; }
+.badge.formulation { background: #27ae60; }
+.badge.strength { background: #fbbc05; color: #222; }
+.badge.payer { background: #2962ff; }
+
+.table-audit {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+.table-audit th {
+  text-align: left;
+  font-weight: 700;
+  padding: 7px 8px;
+  background: #f4f4f4;
+  border-bottom: 1.5px solid #d3d8e5;
+}
+.table-audit td {
+  padding: 7px 8px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.summary-metrics {
+  display: flex;
+  gap: 24px;
+  margin: 18px 0 0 4px;
+}
+.summary-metric {
+  background: #fafbfc;
+  border-radius: 8px;
+  padding: 10px 22px;
+  min-width: 110px;
+  box-shadow: 0 1.5px 9px #0001;
+  font-weight: 600;
+  color: #121212;
+  text-align: center;
+  font-size: 1.06em;
+}
+.highlight-num {
+  color: #eb5757;
+  font-weight: bold;
+}
+
+
+.upload-card {
+  background: #e3f2fd;
+  border-radius: 12px;
+  padding: 32px 30px 24px 30px;
+  margin-bottom: 26px;
+  box-shadow: 0 2.5px 16px #7aa2c610;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.upload-icon {
+  font-size: 2.6em;
+  color: #1976d2;
+}
+
+.upload-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.upload-controls {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.upload-input[type='file'] {
+  border: none;
+  font-size: 1em;
+  background: #fff;
+  border-radius: 7px;
+  padding: 8px 4px;
+  box-shadow: 0 1.5px 6px #3175cd22;
+  cursor: pointer;
+}
+
+.upload-btn {
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 7px;
+  padding: 10px 24px;
+  box-shadow: 0 2px 6px #3175cd33;
+  transition: background 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+}
+
+.upload-btn:disabled {
+  opacity: 0.7;
+  background: #b0bfcf;
+  color: #eee;
+  cursor: not-allowed;
+}
+
+.upload-filename {
+  font-size: 1.03em;
+  color: #1976d2;
+  background: #eaf4fe;
+  border-radius: 5px;
+  padding: 4px 13px;
+  font-weight: 500;
+  margin-left: 3px;
+  box-shadow: 0 1px 6px #90caf960;
+  display: inline-block;
+}
+
+@media (max-width: 670px) {
+  .upload-card {
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 10px 16px 10px;
+  }
+  .upload-icon { font-size: 2em; }
+  .upload-btn, .upload-input[type='file'] { font-size: 1em; padding: 7px 12px; }
+}
