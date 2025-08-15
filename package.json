@@ -13,5 +13,10 @@
   "type": "commonjs",
   "devDependencies": {
     "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "install": "^0.13.0",
+    "npm": "^11.5.2",
+    "react-scripts": "https://registry.npmjs.org/react-scripts/-/react-scripts-5.0.1.tgz"
   }
 }
